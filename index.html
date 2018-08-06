@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>Adiyan Kaul </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="I am Adiyan Kaul a web developer and programmer at Berkeley with good knowldge of backend techniques.">
+  <meta name="author" content="Adiyan Kaul">
+  <meta name="keywords" content="Adiyan Kaul, Interactive Resume, Web developer, Interactive CV, Resume,CV,Homepage,Algorithms,Javascript,Python,Java"/>
+  <meta name="robots" content="index, follow"/>
+  <meta name="revisit-after" content="14 days"/>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" type="text/css" />
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/smooth-scroll.min.js"></script>
+  <script src="js/jquery.stickyPanel.js"></script>
+  <!--<script src="js/init.js"></script>-->
+  <script src="js/app.js"></script>
+  <script src="js/typed.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+	  smoothScroll.init();
+  </script>
+  <script>
+    $().ready(function () {
+      var stickyPanelOptions = {
+        topPadding: 30,
+        savePanelSpace: false,
+        parentSelector: null
+      };
+      $("#navbar").stickyPanel(stickyPanelOptions);
+    });
+  </script>
+  <script>
+    function changec(){
+      var nav =$('#navbar')
+    	all=$( nav ).find( "li" );
+    	active=$( nav ).find( "li.active" );
+      active.removeClass("active");
+  		$(all[4]).addClass("active");
+    }
+  </script>
+  <script>
+	var update = function(){
+	  requestAnimationFrame(update);
+	};
+	requestAnimationFrame(update);
+  </script>
+  <script>
+	  $(function(){
+		  $(".type-this").typed({
+			  strings: ["Developer", "Problem Solver", "Leader", "Hard Worker", "Cal Student", "AI Researcher","Debater"],
+			  typeSpeed: 10,
+			  loop:true
+		  });
+	  });
+  </script>
+  <style>
+	.typed-cursor{
+		opacity: 1;
+		z-index: 5;
+		-webkit-animation: blink 0.7s infinite;
+		-moz-animation: blink 0.7s infinite;
+		animation: blink 0.7s infinite;
+	}
+	@keyframes blink{
+		0% { opacity:1; }
+		50% { opacity:0; }
+		100% { opacity:1; }
+	}
+	@-webkit-keyframes blink{
+		0% { opacity:1; }
+		50% { opacity:0; }
+		100% { opacity:1; }
+	}
+	@-moz-keyframes blink{
+		0% { opacity:1; }
+		50% { opacity:0; }
+		100% { opacity:1; }
+	}
+  </style>
+</head>
+<body>
+  <div class="top">
+  	<div id="particles-js"></div>
+  	<div class="container">
+  	  <h1>Adiyan Kaul</h1>
+  	</div>
+  	<div class="intro-text">
+  		<div class="intro-heading"><span class="type-this">Developer</span></div>
+  	  </div>
+  	  <a data-scroll href="#profile" class="scroll-down">
+  		<span class="glyphicon glyphicon-chevron-down"></span>
+  	  </a>
+  </div>
+  <div id="navbar">
+  	<ul>
+  	  <li class="active"><a data-scroll href="#profile" class="scroll-down">Profile</a></li>
+  	  <li><a data-scroll href="#experiences" class="scroll-down">Experiences</a></li>
+  	  <li><a data-scroll href="#skills" class="scroll-down">Abilities</a></li>
+  	  <li><a data-scroll href="#projects" class="scroll-down">Projects</a></li>
+  	  <li><a data-scroll href="#contact" class="scroll-down" onclick="changec()">Contact</a></li>
+  	</ul>
+  </div>
+  <div class="background-white">
+	  <div id="profile" class="container">
+		<h2>Profile</h2>
+		<p class="back">I&#039;m a full stack developer who loves to program.</p>
+		<hr/>
+		<div class="row">
+		  <div class="col-md-4 col-sm-12 col-xs-12">
+			<h3>About me</h3>
+			<p class="intro">
+			  I am currently a freshmen at Berkeley majoring in Electrical Engineering and Computer Science as a Regents Scholar. I am extremely passionate about anything technology related. I am experienced in all facets of programming but I am most interested in the future of machine learning. I hope to work on projects in the future which will fundamentally change the way we live for the better. </p>
+		  </div>
+		  <div class="col-md-4 col-sm-12 col-xs-12 text-center">
+			<img class="img-circle" src="images/adiyan.png" alt="Adiyan Kaul" />
+		  </div>
+		  <div class="col-md-4 col-sm-12 col-xs-12">
+			<h3>Details</h3>
+			<p class="intro">
+			  <strong>Name:</strong><br />
+			  Adiyan Kaul<br />
+			  <strong>Age:</strong><br />
+			  18 years<br />
+			<strong>Follow me on Linkedin</strong><br />
+			<a href="https://www.linkedin.com/in/adiyankaul" target="_blank"><img src="images/link.svg" alt="linkedin" class="hoverable"></a>
+		  </div>
+		</div>
+	  </div>
+  </div>
+  <div class="background-main">
+	<div id="experiences" class="container">
+	  <h2>Experiences</h2>
+	  <p class="back">
+		&ldquo;Be brave. Take risks. Nothing can substitute experience. &rdquo;<br />- Paulo Coelho
+	  </p>
+	  <hr/>
+	  <h3>Education</h3>
+	  <div class="row">
+		<div class="col-md-4 col-sm-12 col-xs-12">
+		  <h4>UC Berkeley</h4>
+		  <p class="small">
+			  Aug 2018        -
+			  Present</p>
+		</div>
+		<div class="col-md-8 col-sm-12 col-xs-12">
+		  <h4>Electrical Engineering and Computer Science</h4>
+		  <p class="small">
+			I will be taking courses in electrical engineering, computer science, math, and history my first semester. These courses will be the intro courses and I am really excited about getting to learn the material and expand my skills.
+		  </p>
+		</div>
+	  </div>
+	  <div class="row">
+		<div class="col-md-4 col-sm-12 col-xs-12">
+		  <h4>Cupertino High School</h4>
+		  <p class="small">
+			  Aug 2014        -
+			  June 2018</p>
+		</div>
+		<div class="col-md-8 col-sm-12 col-xs-12">
+		  <h4>Diploma</h4>
+		  <p class="small">
+			I graduated highschool with my diploma where I enjoyed courses in math, computer science, and history. Throughout highschool I was always set on computer science and as a result I frequently took part in hackathons and science fairs.
+		  </p>
+		</div>
+	</div>
+	  <hr/>
+	  <h3>Jobs</h3>
+
+	  <div class="row">
+		  <div class="col-md-4 col-sm-12 col-xs-12">
+			<h4>NASA Ames Research Center</h4>
+			<p class="small">
+				June 2017        -
+				Aug 2017</p>
+		  </div>
+		  <div class="col-md-8 col-sm-12 col-xs-12">
+			<h4>Intern</h4>
+			<p class="small">
+			  As an intern at NASA I worked on a project involving autonomous drones and machine learning. I wrote a convolutional neural network able to distinguish people with suspicious attributes, like concealed weapons and backpacks. I also worked on the hardware aspect of mounting objects on the drone like a camera and a raspberry pi. The software was then loaded on the drone so that it could look for and track individuals using the algorithm. This was presented to a congressman, the Army, and several senior individuals at NASA.
+			</p>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-md-4 col-sm-12 col-xs-12">
+			<h4>Keysight Technologies</h4>
+			<p class="small">
+				June 2016        -
+				Aug 2016</p>
+		  </div>
+		  <div class="col-md-8 col-sm-12 col-xs-12">
+			<h4>Keysight Labs Software Intern</h4>
+			<p class="small">
+			  As an intern in the Keysight Labs division I worked on evaluating modulation recognition using machine learning algorithms. The tasks I had to accomplish included acquiring over-the-air RF signals, developing software to evaluate the accuracy of different models, running tests, and reporting test results.I was able to obtain three different types of over the air signals and train a neural network to be able to distinguish between different signal spectrograms. I also developed a web service that enable non expert users to upload and classify signals and a service to train models and hosted it on an Amazon EC2 instance.
+			</p>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-md-4 col-sm-12 col-xs-12">
+			<h4>Lawson Mathcounts</h4>
+			<p class="small">
+				Aug 2015        -
+				Aug 2016</p>
+		  </div>
+		  <div class="col-md-8 col-sm-12 col-xs-12">
+			<h4>Coach</h4>
+			<p class="small">
+			  I helped a team of around 50 people to learn advanced math to perform well at mathcounts competitions. I helped organize meetings, make worksheets, and teach people on how to solve difficult math problems necessary to do well in mathcounts competitions. This was done during ths school year.
+			</p>
+		  </div>
+		</div>
+	</div>
+  </div>
+  <div class="background-white">
+	<div id="skills" class="container">
+	  <h2>Abilities</h2>
+	  <p class="back"> Ability may get you to the top, but it takes character to keep you there. <br />- Stevie Wonder</p>
+	  <hr/>
+	  <h3>Skills</h3>
+	  <div class="row">
+		<div class="col-md-6 col-sm-12 col-xs-12">
+		  <ul class="no-bullets">
+			<li>
+			  <span class="skill-title">Python</span>
+			  <span class="skill-score">
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+			  </span>
+			</li>
+		  </ul>
+		  <ul class="no-bullets">
+			<li>
+			  <span class="skill-title">Javascript</span>
+			  <span class="skill-score">
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+			  </span>
+			</li>
+		  </ul>
+		  <ul class="no-bullets">
+			<li>
+			  <span class="skill-title">HTML</span>
+			  <span class="skill-score">
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+			  </span>
+			</li>
+		  </ul>
+		  <ul class="no-bullets">
+			<li>
+			  <span class="skill-title">Node.js</span>
+			  <span class="skill-score">
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+			  </span>
+			</li>
+		  </ul>
+		  <ul class="no-bullets">
+			<li>
+			  <span class="skill-title">Java</span>
+			  <span class="skill-score">
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+			  </span>
+			</li>
+		  </ul>
+		  <ul class="no-bullets">
+			<li>
+			  <span class="skill-title">Bootstrap</span>
+			  <span class="skill-score">
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+			  </span>
+			</li>
+		  </ul>
+		  <ul class="no-bullets">
+			<li>
+			  <span class="skill-title">JQuery</span>
+			  <span class="skill-score">
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+			  </span>
+			</li>
+		  </ul>
+		  <ul class="no-bullets">
+			<li>
+			  <span class="skill-title">Command Line</span>
+			  <span class="skill-score">
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+			  </span>
+			</li>
+		  </ul>
+		  <ul class="no-bullets">
+			<li>
+			  <span class="skill-title">JSON</span>
+			  <span class="skill-score">
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+			  </span>
+			</li>
+		  </ul>
+		  <ul class="no-bullets">
+			<li>
+			  <span class="skill-title">Swift</span>
+			  <span class="skill-score">
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+			  </span>
+			</li>
+		  </ul>
+		</div>
+		<div class="col-md-6 col-sm-12 col-xs-12">
+		<ul class="no-bullets">
+			<li>
+			  <span class="skill-title">R</span>
+			  <span class="skill-score">
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+			  </span>
+			</li>
+		  </ul>
+		  <ul class="no-bullets">
+			<li>
+			  <span class="skill-title">CSS</span>
+			  <span class="skill-score">
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+			  </span>
+			</li>
+		  </ul>
+		  <ul class="no-bullets">
+			<li>
+			  <span class="skill-title">SASS</span>
+			  <span class="skill-score">
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+			  </span>
+			</li>
+		  </ul>
+		  <ul class="no-bullets">
+			<li>
+			  <span class="skill-title">XML</span>
+			  <span class="skill-score">
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+			  </span>
+			</li>
+		  </ul>
+		  <ul class="no-bullets">
+			<li>
+			  <span class="skill-title">SQL</span>
+			  <span class="skill-score">
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+			  </span>
+			</li>
+		  </ul>
+		  <ul class="no-bullets">
+			<li>
+			  <span class="skill-title">Scrum</span>
+			  <span class="skill-score">
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+			  </span>
+			</li>
+		  </ul>
+		  <ul class="no-bullets">
+			<li>
+			  <span class="skill-title">Angular JS</span>
+			  <span class="skill-score">
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+			  </span>
+			</li>
+		  </ul>
+		  <ul class="no-bullets">
+			<li>
+			  <span class="skill-title">C++</span>
+			  <span class="skill-score">
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+			  </span>
+			</li>
+		  </ul>
+		  <ul class="no-bullets">
+			<li>
+			  <span class="skill-title">PHP</span>
+			  <span class="skill-score">
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+			  </span>
+			</li>
+		  </ul>
+		  <ul class="no-bullets">
+			<li>
+			  <span class="skill-title">Ruby</span>
+			  <span class="skill-score">
+				<span class="glyphicon glyphicon-star filled"></span>
+			  </span>
+			</li>
+		  </ul>
+		</div>
+	  </div>
+	  <hr/>
+	  <h3>Languages</h3>
+	  <div class="row">
+		<div class="col-md-6 col-sm-12 col-xs-12">
+		  <ul class="no-bullets">
+			<li>
+			  <span class="skill-title">English</span>
+			  <span class="skill-score">
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+			  </span>
+			</li>
+		  </ul>
+		  <ul class="no-bullets">
+			<li>
+			  <span class="skill-title">Hindi</span>
+			  <span class="skill-score">
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+			  </span>
+			</li>
+		  </ul>
+		</div>
+		<div class="col-md-6 col-sm-12 col-xs-12">
+		  <ul class="no-bullets">
+			<li>
+			  <span class="skill-title">Kashmiri(Mother tounge)</span>
+			  <span class="skill-score">
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+			  </span>
+			</li>
+		  </ul>
+		  <ul class="no-bullets">
+			<li>
+			  <span class="skill-title">Spanish</span>
+			  <span class="skill-score">
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+				<span class="glyphicon glyphicon-star filled"></span>
+			  </span>
+			</li>
+		  </ul>
+		</div>
+	  </div>
+	</div>
+  </div>
+  <div class="background-main">
+	<div id="projects" class="container">
+	  <h2>Projects</h2>
+	  <p class="back">
+		&ldquo;I enjoy creating new ideas, working on new creative projects.&rdquo;<br />- Paul Allen
+	  </p>
+	  <hr/>
+	  <div class="row">
+  		<div class="col-md-6 col-sm-12 col-xs-12">
+  		  <figure class="project">
+  			<img src="images/resq.png" alt="ResQ" />
+  			<figcaption>
+  			  <h3>ResQ</h3>
+  			  <p class="intro">Projected created at Make Hacks 2015</p>
+  			  <p class="intro"><strong>Description:</strong> <br />An app that would help ameloriate a refugee crisis by allowing users to register their house as a safe house and allow users to check into safe houses. This could also be used in emergency situations like hurricanes as well.</p>
+  			  <a href="https://devpost.com/software/resq" target="_blank"></a>
+  			  <span class="icon">
+  				<span class="glyphicon glyphicon-new-window"></span>
+  			  </span>
+  			</figcaption>
+  		  </figure>
+  		</div>
+  		<div class="col-md-6 col-sm-12 col-xs-12">
+  		  <figure class="project">
+    			<img src="images/hawkeye.png" alt="Hawkeye" />
+    			<figcaption>
+    			  <h3>Hawkeye</h3>
+    			  <p class="intro"> 4th place winner at California State Science Fair 2016</p>
+    			  <p class="intro"><strong>Description:</strong> <br />My partner and I worked on a project which used drones to assist with search and rescue missions. We mounted a raspberry pi and a raspberry pi camera on a 3DR Y6 drone with the capability to identify and count people from above and guide these people to previously designated “safe” locations. We then wrote code to identify people using computer vision and the D*Lite pathfinding algorithm in C++ and Python to guide a drone in an unfamiliar and dynamic environment while helping navigate people to safety.</p>
+    			  <a href="pn.pdf" target="_blank"></a>
+    			  <span class="icon">
+    				<span class="glyphicon glyphicon-new-window"></span>
+    			  </span>
+    			</figcaption>
+  		  </figure>
+  		</div>
+      <div class="col-md-6 col-sm-12 col-xs-12">
+  		  <figure class="project">
+    			<img src="images/swift.png" alt="SwiftAssist" />
+    			<figcaption>
+    			  <h3>SwiftAssist</h3>
+    			  <p class="intro">Los Altos Hacks best use of Microsoft Technologies 2016</p>
+    			  <p class="intro"><strong>Description:</strong> <br />This project involved crowdsourcing emergency response so that people who carry allergy medication, EpiPens, are CPR certified, or are a doctor can immediately respond to emergencies close to them, faster than 911. We developed an iphone app, a web app, and a pebble app in order for users to register, request help, and respond to help requests.</p>
+    			  <a href="https://devpost.com/software/swiftassist-j6r9s2" target="_blank"></a>
+    			  <span class="icon">
+    				<span class="glyphicon glyphicon-new-window"></span>
+    			  </span>
+    			</figcaption>
+  		  </figure>
+  		</div>
+      <div class="col-md-6 col-sm-12 col-xs-12">
+  		  <figure class="project">
+    			<img src="images/dermyx.png" alt="Dermyx" />
+    			<figcaption>
+    			  <h3>Derymx</h3>
+    			  <p class="intro">Health++ Stanford Hackathon Best Global Oncology Prize</p>
+    			  <p class="intro"><strong>Description:</strong> <br />My team and I made an Electron app and an iOS app that rapidly detected melanoma skin cancer.From the comfort of one's home, an individual can take a quick picture of an area on his or her skin inside the Dermyx app. Then the algorithm (which uses machine learning to get trained using a database of full of malignant and benign melanoma pictures) operating in the background of Dermyx will discern and classify the picture taken as either benign or malignant.</p>
+    			  <a href="https://devpost.com/software/dermyx" target="_blank"></a>
+    			  <span class="icon">
+    				<span class="glyphicon glyphicon-new-window"></span>
+    			  </span>
+    			</figcaption>
+  		  </figure>
+  		</div>
+      <div class="col-md-6 col-sm-12 col-xs-12">
+  		  <figure class="project">
+    			<img src="images/vit.png" alt="Vitruvian" />
+    			<figcaption>
+    			  <h3>Vitruvian</h3>
+    			  <p class="intro">HSHacks 3 Winner</p>
+    			  <p class="intro"><strong>Description:</strong> <br />My team and I made an iOS app called Vitruvian that is a simple and elegant mobile application to help doctors in developing areas to keep track of their patients and diagnose diseases.I wrote the machine learning algorithm which had the purpose of finding the risk of certain medical ailments such as heart diseases with around 72% accuracy.</p>
+    			  <a href="https://devpost.com/software/vitruvian-pi1lmv" target="_blank"></a>
+    			  <span class="icon">
+    				<span class="glyphicon glyphicon-new-window"></span>
+    			  </span>
+    			</figcaption>
+  		  </figure>
+  		</div>
+      <div class="col-md-6 col-sm-12 col-xs-12">
+  		  <figure class="project">
+    			<img src="images/sentry.png" alt="Sentry" />
+    			<figcaption>
+    			  <h3>Sentry</h3>
+    			  <p class="intro">Angel Hacks GovTech Challegnge Winner</p>
+    			  <p class="intro"><strong>Description:</strong> <br />Sentry is an app that finds, identifies, and tracks armed militants through crowdsourcing. Citizens will be attracted to it because it increases their public safety though its danger-avoiding pathfinding, and intelligence communities will be attracted to it because of the massive amount of crowdsourced data + intelligent arms verification using Keras ML + identification and tracking using SSIM. Through the iOS app users were able to point their cameras at potential militants and our algorithm would determine the threat and if necessary call an uber for the user avoiding dangerous spots.</p>
+    			  <a href="http://www.hackathon.io/sentry2" target="_blank"></a>
+    			  <span class="icon">
+    				<span class="glyphicon glyphicon-new-window"></span>
+    			  </span>
+    			</figcaption>
+  		  </figure>
+  		</div>
+	  </div>
+	</div>
+  </div>
+  <div class="background-gray">
+	<div id="contact" class="container">
+	  <h2>Contact</h2>
+	  <hr/>
+	  <div class="row">
+		<div class="col-md-6 col-sm-12 col-xs-12">
+		  <div class="center-block">
+			<a href="mailto:akaul@berkeley.edu">
+			  <i class="fa fa-at fa-5x mb-3" aria-hidden="true"></i>
+			</a>
+			<h4>Email</h4>
+		  </div>
+		</div>
+		<div class="col-md-6 col-sm-12 col-xs-12">
+		  <div class="center-block">
+			<a href="https://www.instagram.com/adiyankaul" target="_blank">
+			  <i class="fa fa-instagram fa-5x mb-3" aria-hidden="true"></i>
+			</a>
+			<h4>Instagram</h4>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow:
+Disallow: /CNAME
+
+Sitemap: adiyankaul.com/sitemap.xml

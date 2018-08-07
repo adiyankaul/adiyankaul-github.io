@@ -2,4 +2,4 @@ User-Agent: *
 Disallow:
 Disallow: /CNAME
 
-Sitemap: adiyankaul.com/sitemap.xml
+Sitemap: https://adiyankaul.com/sitemap.xml
